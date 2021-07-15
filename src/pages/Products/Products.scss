@@ -1,0 +1,16 @@
+.album{
+    height: calc(100vh - 82px);
+}
+
+.search-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-bottom: 30px;
+
+    .form-control{
+        margin-bottom: 0;
+    }
+}

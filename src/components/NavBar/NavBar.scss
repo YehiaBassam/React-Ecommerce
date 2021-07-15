@@ -1,0 +1,136 @@
+.navbar{
+    background-color: #20354a!important;
+
+    .dropdown{
+        list-style-type: none;
+    }
+
+    .user-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid gray;
+        cursor: pointer;
+    }
+
+    .cart{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .items-number{
+        color: white;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: rgb(240, 35, 35);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -23%;
+        right: 8%;
+    }
+    
+    .navbar-brand {
+        background-color: #CA4246;
+        background-image: linear-gradient(
+            45deg,
+            #CA4246 16.666%, 
+            #E16541 16.666%, 
+            #E16541 33.333%, 
+            #F18F43 33.333%, 
+            #F18F43 50%, 
+            #8B9862 50%, 
+            #8B9862 66.666%, 
+            #476098 66.666%, 
+            #476098 83.333%, 
+            #A7489B 83.333%);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+    }
+    
+    .navbar-brand:hover{
+        animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+    }
+    
+    @keyframes rainbow-text-simple-animation-rev {
+        0% {
+            background-size: 650%;
+        }
+        40% {
+            background-size: 650%;
+        }
+        100% {
+            background-size: 100%;
+        }
+    }
+    
+    @keyframes rainbow-text-simple-animation {
+        0% {
+            background-size: 100%;
+        }
+        80% {
+            background-size: 650%;
+        }
+        100% {
+            background-size: 650%;
+        }
+    }
+    
+    
+    .dropdown-menu{
+        width: 550px !important;
+        left: -507% !important;
+    }
+    
+    @media screen and (max-width:992px) {
+        .dropdown-menu{
+            left: -250% !important;
+        }
+    }
+    
+    @media screen and (max-width:500px) {
+        .dropdown-menu{
+            width: 310px !important;
+            left: -84% !important;
+        }
+    }
+    
+    
+    .cart-product-image{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+input[type=number] {
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-menu {
+    display: none;
+  }
+  
+  .dropdown-on > .dropdown-menu {
+    display: block;
+  }
